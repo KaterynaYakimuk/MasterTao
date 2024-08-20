@@ -1,0 +1,22 @@
+.color__item {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 24px;
+  }
+  
+  .color__item_1 {
+    background-color: $color-primary;
+  }
+  
+  .color__item_2 {
+    background-color: $color-secondary;
+  }
+  
+  .color__item_3 {
+    background-color:$bg-primary;
+    border: 1px solid $text-color;
+  }
+  
+  .color__item_4 {
+    background-color: $bg-secondary;
+  }

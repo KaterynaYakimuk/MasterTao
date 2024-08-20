@@ -1,4 +1,43 @@
 @media screen and (max-width: 1024px) {
+    .header__logo_img{
+        max-width: 126px;
+    }
+    
+    .header__nav{
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: $bg-secondary;
+        padding: 0 40px 60px;
+
+        &.show{
+            display: flex;
+        }
+
+        &.btn__nav{
+            padding: 22px 78px;
+            font-size: 16px;
+        }
+    }
+
+    .nav__list{
+        flex-direction: column;
+        padding: 37px 12px 34px;
+        gap: 0;
+        
+        a{
+          font-size: 24px;
+          line-height: 222%;
+        }
+    }
+
+    .hamburger{
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+    
 }
-
-
