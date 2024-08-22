@@ -1,4 +1,26 @@
 @media screen and (max-width: 1024px) {
+    section {
+        &.accent {
+            &:before {
+                width: 100%;
+                border-radius: 0px;
+            }
+        }
+    }
+    
+    .container {
+        padding-left: $container-mobile-padding;
+        padding-right: $container-mobile-padding;
+    }
+
+
+    //header//
+
+    .header__container {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
     .header__logo_img{
         max-width: 126px;
     }
@@ -6,21 +28,23 @@
     .header__nav{
         display: none;
         position: absolute;
-        top: 100px;
+        top: 72px;
         left: 0;
         flex-direction: column;
         align-items: center;
         background-color: $bg-secondary;
         padding: 0 40px 60px;
+        transition: 0.7s;
+        box-shadow: 14px 22px 40px 0 rgba(30, 35, 66, 0.6117647059);
 
         &.show{
             display: flex;
         }
+    }
 
-        &.btn__nav{
-            padding: 22px 78px;
-            font-size: 16px;
-        }
+    .header__nav .btn__nav{
+        padding: 22px 78px;
+        font-size: 16px;
     }
 
     .nav__list{
@@ -40,4 +64,57 @@
         align-items: center;
     }
     
+    //first-screen//
+
+    .slider-info {
+        padding: 0;
+
+        .swiper-slide {
+            min-height: calc(100vh - 71px);
+            border-radius: 0;
+            padding: 125px 20px 0;
+            background-position: center;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #04051199;
+            }
+        }
+
+        .btn-lg{
+            padding: 20px 36px;
+        }
+
+        
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &-title {
+            font-size: 32px;
+            max-width: 240px;
+            margin-bottom: 10px;
+        }
+    
+        &-description {
+            font-size: 16px;
+            max-width: 280px;
+            margin-bottom: 18px;
+        }
+
+        
+    }
+
+
+    
+
 }

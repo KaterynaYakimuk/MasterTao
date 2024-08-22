@@ -1,3 +1,8 @@
+header{
+  position: relative;
+  background-color: $bg-primary;
+}
+
 .header__container{
   display: flex;
   padding-top: 25px;
@@ -6,11 +11,11 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
 }  
 
 .header__nav{

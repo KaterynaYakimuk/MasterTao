@@ -10,12 +10,31 @@ body {
   color: $text-color;
 }
 
+body.overflow-hidden{
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #363a4d30;
+    backdrop-filter: blur(5px);
+  }
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+.container-xxl {
+  max-width: 1844px;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 .col-md-4 {
@@ -233,3 +252,98 @@ ol {
   padding: 0px 15px 0px 0px;
   scrollbar-color:  $color-primary  $text-color;
 }
+
+
+section{
+  padding: 90px 0 100px;
+  margin-bottom: 95px;
+
+  &.accent{
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      max-width: 1820px;
+      width: calc(100% - 30px);
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      border-radius: 20px;
+      background-color: $bg-secondary;
+    }
+  }
+
+  &:nth-child(odd) {
+    .template-title{
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+  }
+
+}
+  
+
+
+.template-title {
+  padding-bottom: 60px;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+        
+  &::after{
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 2px;
+    background-color: $color-secondary;
+    left: 50%;
+    bottom: 46px;
+    transform: translate(-50%, 0);
+  }
+
+  h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  h3{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+
+  &-start{
+    text-align: start;
+      
+      &::after {
+        left: 0;
+        transform: none;
+      }
+  }
+
+  &.template-title-half{
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+
+      &::after {
+        display: none;
+      }
+
+        h2::after {
+          content: '';
+          display: inline-block;
+          width: 88px;
+          height: 2px;
+          background-color: $color-secondary;
+          margin: 8px 20px;
+        }
+  }
+}
+

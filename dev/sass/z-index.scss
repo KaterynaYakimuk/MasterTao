@@ -1,0 +1,9 @@
+header                                  { z-index: 15; }
+body.overflow-hidden:before             { z-index: 14; }
+.slider-info .arrow-container           { z-index: 1; }
+
+
+@media screen and (max-width: 1024px) {
+    .slider-info .swiper-slide:before  { z-index: -1; }
+}
+
