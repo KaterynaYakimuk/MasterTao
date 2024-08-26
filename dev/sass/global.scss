@@ -35,6 +35,8 @@ body.overflow-hidden{
   max-width: 1844px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
   
 .col-md-4 {
@@ -231,7 +233,7 @@ ol {
 }
 
 .btn-lg .icon {
-  margin: 0 -14px 0 47px;
+  margin: 0 -16px 0 47px;
   width: 27px;
   height: 27px;
   transition: 0.3s;
@@ -327,7 +329,7 @@ section{
       }
   }
 
-  &.template-title-half{
+  &-half{
     max-width: 700px;
     width: 100%;
     text-align: left;
@@ -336,7 +338,7 @@ section{
         display: none;
       }
 
-        h2::after {
+        & h2::after {
           content: '';
           display: inline-block;
           width: 88px;

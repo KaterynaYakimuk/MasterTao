@@ -6,4 +6,26 @@
   .nav__list{
     gap: 35px;
   }
+
+  .template-title{
+
+    &-half {
+        &:after {
+            display: none;
+        }
+
+        h2:after {
+            content: "";
+            display: inline-block;
+        }
+    } 
+    &-start {
+      &:after {
+          left: 0;
+          transform: none;
+      }
+  }
 }
+  
+}
+

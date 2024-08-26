@@ -76,7 +76,9 @@ body {
 
 @media screen and (max-width: 1024px) {
   .header__nav{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
     position: absolute;
     top: 100px;
     left: 0;
@@ -87,7 +89,9 @@ body {
   }
 
   .header__nav.show{
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
   }
 
   .header__nav .btn__nav{
