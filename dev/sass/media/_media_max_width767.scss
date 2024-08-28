@@ -1,3 +1,29 @@
 @media screen and (max-width: 767px) {
+    
+    .calculation-form {
+        padding: 52px 30px 34px;
+        border-radius: 20px;
 
+        .form-btn {
+            width: 100%;
+
+            .icon {
+                margin: 0 -14px 0 47px;
+            }
+        }
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .variation-box {
+        padding-top: 10px;
+        margin-bottom: 16px;
+    }
+    
+    .special-gap {
+        margin-bottom: 0px;
+    }
 }

@@ -43,3 +43,18 @@
     }
     
 });
+
+const fileLable = document.querySelectorAll('.calculation-label');
+const fileInput = document.querySelectorAll('.calculation-input');
+const fileBtn = document.querySelectorAll('.form-btn')
+
+fileInput.forEach(item => {
+    item.addEventListener('change', function() {
+        let fileName = item.closest('.input-box').querySelector('.file-name')
+        fileName.innerHTML = item.files[0].name;
+    })
+})
+
+fileLable.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))
+
+fileBtn.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('btn-gap'))

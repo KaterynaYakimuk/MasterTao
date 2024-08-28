@@ -1,0 +1,111 @@
+.calculation-form{
+    max-width: 626px;
+    padding: 47px 50px 61px;
+    background-color: $bg-secondary;
+    border-radius: 20px;
+    
+}
+
+.form-row{
+    display: flex;
+    gap: 30px;
+}
+
+.form-column {
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 6px;
+
+    & label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+    }
+
+    & input {
+        font-size: 14px;
+        color: $bg-primary;
+        background-color: $text-color;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        min-height: 56px;
+        padding: 17px 20px;
+        transition: .3s;
+        
+
+        &::placeholder {
+            color: #cbcbcb;
+            font-size: 15px;
+            line-height: 126%;
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:hover  {
+            box-shadow: 0px 0px 4px 2px $color-primary;
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 4px 2px $color-secondary;
+        }   
+        
+        &:active {
+            box-shadow: 0px 0px 4px 2px $color-primary;
+        }
+        
+    }
+}
+
+.variation-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 17px;
+}
+
+.control-box {
+    margin-bottom: 14px;
+}
+
+[type="file"] {
+    display: none;
+}
+
+.input-box .calculation-label {
+    border: 2px dashed #ffffff42;
+    padding: 10px 24px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: .3s;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: $color-secondary;
+        border: 2px dashed $color-secondary;
+    }
+}
+
+.file-name {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+
+.special-gap {
+    margin-bottom: 14px;
+}
+
+.btn-gap {
+    margin-bottom: -3px;
+}
+
+

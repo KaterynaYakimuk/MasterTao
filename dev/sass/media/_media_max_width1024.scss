@@ -14,36 +14,7 @@
         }
     }
     
-    .template-title {
-        & h2 {
-            font-size: 24px;
-        }
-        & h3 {
-            font-size: 16px;
-        }
-        &::after{
-            bottom: 48px;
-        }
-        &.template-title-start {
-            text-align: center;
-            &:after {
-                left: 50%;
-                transform: translate(-50%, 0);
-            }
-        }
-        &.template-title-half {
-            max-width: 100%;
-            text-align: center;
-            &:after {
-                display: inline-block;
-            }
-            & h2:after {
-                display: none;
-            }
-        }
-    }
-
-
+    
     //header//
 
     .header__container {
@@ -56,16 +27,17 @@
     }
     
     .header__nav{
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
+        position: absolute; 
         top: 72px;
         left: 0;
+        visibility: hidden;
+        opacity: 0;      
         flex-direction: column;
         align-items: center;
         background-color: $bg-secondary;
         padding: 0 40px 60px;
         transition: 0.3s;
+        transform: translate(-100%);
         box-shadow: 14px 22px 40px 0 rgba(30, 35, 66, 0.6117647059);
 
         &.show{
@@ -145,24 +117,40 @@
         }
     }
 
+    
     .template-title {
-        h2 {
+        & h2 {
             font-size: 24px;
         }
-
-        h3 {
-            font-size: 18px;
+        & h3 {
+            font-size: 16px;
         }
-
-        &:after {
+        &::after{
             bottom: 42px;
         }
-
-        &-half {
-            margin: 0 auto;
+        &.template-title-start {
             text-align: center;
+            &:after {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+        &.template-title-half {
+            max-width: 100%;
+            text-align: center;
+            &:after {
+                display: inline-block;
+            }
+            & h2:after {
+                display: none;
+            }
         }
     }
+
+    //calculation//
+    
+
+
 }
 
     

@@ -24,7 +24,7 @@ body.overflow-hidden{
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: $container-padding;
@@ -291,7 +291,7 @@ section{
 
 
 .template-title {
-  padding-bottom: 60px;
+  padding-bottom: $section-title-padding;
   margin-bottom: 0;
   text-align: center;
   position: relative;
