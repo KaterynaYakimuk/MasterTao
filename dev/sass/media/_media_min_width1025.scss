@@ -2,10 +2,6 @@
   .hamburger{
     display: none;
   }
-  
-  .nav__list{
-    gap: 35px;
-  }
 
   .template-title{
 
@@ -24,8 +20,23 @@
           left: 0;
           transform: none;
       }
+    }
   }
+
+  .calculation-decoration {
+    max-width: 54.634vw;
+  }
+
+
+  .slider-advantages {
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      gap: 26px 0;
+    }
+
+    .swiper-slide {
+      max-width: 25%;
+    }
+}
 }
   
-}
-

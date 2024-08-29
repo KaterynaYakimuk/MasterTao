@@ -1,0 +1,41 @@
+.advantage {
+    max-width: 236px;
+    text-align: center;
+    margin: 0 auto;
+    
+    .img-box {
+        width: 93px;
+        height: 93px;
+        background: $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 10px auto 32px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 113px;
+            height: 113px;
+            border: 1px solid #6C7188;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            border-radius: 50%;
+        }
+    }
+
+    &-title {
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.223;
+        min-height: 66px;
+    }
+}
+.advantages {
+    .swiper-pagination {
+        position: static;
+        margin-top: 8px;
+    }
+}

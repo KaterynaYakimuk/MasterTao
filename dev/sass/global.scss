@@ -258,7 +258,7 @@ ol {
 
 section{
   padding: 90px 0 100px;
-  margin-bottom: 95px;
+  margin-bottom: 0;
 
   &.accent{
     position: relative;
@@ -347,5 +347,18 @@ section{
           margin: 8px 20px;
         }
   }
+}
+
+.swiper-initialized {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.swiper-pagination {
+  font-size: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
 }
 

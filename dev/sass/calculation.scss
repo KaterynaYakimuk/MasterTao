@@ -1,9 +1,15 @@
+.calculation-page{
+    .container{
+        position: relative;
+    }
+}
+
 .calculation-form{
     max-width: 626px;
     padding: 47px 50px 61px;
     background-color: $bg-secondary;
     border-radius: 20px;
-    
+    box-shadow: 0px 2px 40px 0 rgb(6 9 27 / 62%);
 }
 
 .form-row{
@@ -108,4 +114,12 @@
     margin-bottom: -3px;
 }
 
+
+.calculation-decoration {
+    position: absolute;
+    bottom: -100px;
+    left: 626px;
+    max-width: 29.167vw;
+    max-height: 888px;
+}
 
