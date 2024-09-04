@@ -66,57 +66,74 @@ fileBtn.forEach(item => item.closest('.form-row').previousElementSibling.classLi
 
 //advantages//
 
-let swiperAdvantages  
+const advantagesCount = document.querySelectorAll('.slider-advantages .swiper-slide').length
 
-function initAdvantages() {
-  swiperAdvantages = new Swiper('.slider-advantages', {
+const swiperAdvantages = new Swiper('.slider-advantages', {  
   spaceBetween: 12,
   loop: true,
-
+  simulateTouch: true,
+  slidesPerView: 1,
   pagination: {
       el: '.swiper-pagination',
       clickable: true,
       enabled: true,
   },
   breakpoints: {
-      1025: {
-          spaceBetween: 40,
-          navigation: {
-              enabled: true,
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-              enabled: false,
-          },
-
-      }
+    1025: {
+      spaceBetween: 0,
+      initialSlide: 0,
+      loop: false,
+      slidesPerGroup: advantagesCount,
+      simulateTouch: false,
+      pagination: {
+          enabled: false,
+          el: '.swiper-pagination',
+      },
+    }
   }
 });
+
+
+//delivery//
+
+const swiperTemplate = new Swiper('.swiper-template', {  
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 100,
+  pagination: {
+    el: '.swiper-pagination',
+    enabled: true,
+    clickable: true,
+  },
+  navigation: {
+    enabled: false,
+  },
+
+  breakpoints: {
+    1025: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        navigation: {
+            enabled: true,
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            enabled: false,
+        },
+    },
+    1400: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+            enabled: true,
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            enabled: false,
+        },
+    },
+   
 }
-
-function destroyAdvantages() {
-swiperAdvantages.destroy( true )   
-}
-
-
-function mediaQuery(matchMedia1024) {
-  if (matchMedia1024.matches) { // If media query matches
-    initAdvantages()
-  } else {
-    destroyAdvantages()
-  }
-}
-
-// Create a MediaQueryList object
-const matchMedia1024 = window.matchMedia("(max-width: 1024px)")
-
-// Call listener function at run time
-mediaQuery(matchMedia1024);
-
-// Attach listener function on state changes
-matchMedia1024.addEventListener("change", function() {
-  mediaQuery(matchMedia1024);
 });
-
-

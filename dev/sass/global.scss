@@ -110,6 +110,11 @@ ol li {
   list-style: none;
 }
 
+ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
 ol {
   counter-reset: list;
 
@@ -359,6 +364,5 @@ section{
   font-size: 0px;
   display: flex;
   justify-content: center;
-  gap: 26px;
 }
 

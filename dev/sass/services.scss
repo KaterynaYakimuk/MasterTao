@@ -1,0 +1,41 @@
+.services {
+
+    .swiper-template:before,
+    .swiper-template:after {
+        background-color: $bg-secondary;
+    }
+
+
+    .template-card {
+        position: relative;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+
+        >* {
+            z-index: 0;
+        }
+    }
+
+    .card-title {
+        margin-top: auto;
+    }
+
+    .card-description {
+        font-size: 15px;
+        text-align: left;
+        font-weight: 400;
+        margin-bottom: 14px;
+    }
+}

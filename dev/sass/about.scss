@@ -1,0 +1,46 @@
+.about{
+    .container{
+        position: relative;
+    }
+}
+
+.about-row {
+    display: flex;
+    gap: 35px;
+    margin-top: -142px;
+
+    & .content-box{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 22px;
+
+        & h6{
+            font-size: 18px;
+            line-height: 172%;
+            font-weight: 300;
+            margin: 0px;
+        }
+    }
+
+    & .img-box {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        
+
+        & img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    // & .img-box {
+    //     position: absolute;
+    //     bottom: -115px;
+    //     left: 606px;
+    //     width: 50%;
+
+}
+

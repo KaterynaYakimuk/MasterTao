@@ -93,10 +93,13 @@
 
         .btn-lg{
             padding: 20px 36px;
-        }
 
-        
+            .icon {
+                margin-left: 27px;
+            }
+        }
     }
+        
 
     .banner {
         display: flex;
@@ -155,6 +158,115 @@
 
     .calculation-decoration {
         display: none;
+    }
+
+
+    //swiper template//
+
+    .swiper-template {
+        padding: 0px 0px 10px;
+        margin: 0 -15px;
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .template-card {
+        max-width: 360px;
+    }
+
+    //about//
+ 
+    .about {
+        & .about-row {
+            flex-direction: column;
+            margin-top: 0px;
+                            
+            & .content-box {
+                width: 100%;
+                & h6 {
+                    text-align: justify;
+                    font-size: 17px;
+                    line-height: 150%;
+                }
+            }
+            & .img-box {
+                width: 100%;
+
+                & img {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
+    //questions//
+
+    .question-row {
+        flex-direction: column;
+
+        & .accordion {
+            max-width: 100%;
+        }
+        & .question-form {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            & .form-description {
+                text-align: center;
+            }
+        }
+    }
+
+ //registration//
+ 
+    .registration-content {
+        gap: 17px;
+
+        & .registration-row {
+            flex-direction: column;
+
+            &.flex-reverse {
+                flex-direction: column-reverse;
+            }
+            & .description-box {
+                width: 100%;
+
+                & .registration-btn {
+                    text-align: center;
+
+                    .btn-lg .icon {
+                        margin: 0px -16px 0 100px;
+                    }
+                }
+            }
+            & .img-box {
+                width: 100%;
+            }
+        }
+    }
+
+    //footer//
+
+    .footer {
+        padding-top: 90px;
+
+        & .container {
+            & .contact-container {
+                 margin: 0 auto;
+                 text-align: center;
+
+                & .icon-box {
+                    justify-content: center;
+                }
+            }
+
+            & .nav-container {
+                display: none;
+            }
+        }
     }
 
 

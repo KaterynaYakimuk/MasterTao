@@ -1,0 +1,101 @@
+.question {
+    padding-top: 0px;
+    & .container {
+        padding: 0 20px;
+    }
+}
+.question-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
+    & .accordion {
+        max-width: 716px;
+        width: 100%;
+        & .accordion-item {
+            margin-bottom: 16px;
+            border-radius: 10px;
+            border: none;
+            & .accordion-collapse.show {
+                border-radius: 10px;
+                box-shadow: 5px 15px 40px 0 #0b186152;
+            }
+            & .accordion-button {
+                border-radius: 9px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 125%;
+                padding: 18px 18px 17px 34px;
+                color: $text-color;
+                background-color: $bg-primary;
+                display: flex;
+                justify-content: space-between;
+                &:focus,
+                &:active {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                }
+                &.collapsed {
+                    border: 1px solid #3a444e;
+                    transition: .2s;
+                }
+                &:not(.collapsed) {
+                    color: #282b38;;
+                    background-color: $text-color;
+                    box-shadow: none;
+                    border: 1px solid $text-color;
+                    &:after {           
+                        filter: brightness(0) saturate(100%) invert(62%) sepia(78%) saturate(703%) hue-rotate(336deg) brightness(95%) contrast(89%);
+                        transform: rotate(-90deg);
+                        transition: .2s;
+                    }
+                }
+                &:after {
+                    background: url('assets/img/btn-arrow.svg');
+                    width: 27px;
+                    height: 27px;
+                    margin-left: 30px;
+                    filter: invert(100%) sepia(0%) saturate(0%) brightness(180%) contrast(101%);
+                }
+            }
+            & .accordion-body {
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 145%;
+                color: $bg-primary;
+                padding: 0px 74px 20px 34px;
+                margin-top: -6px;
+            }
+        }
+    }
+    & .question-form {
+        display: flex;
+        flex-direction: column;
+        padding: 38px 40px;
+        max-width: 390px;
+        max-height: 553px;
+        width: 100%;
+        background-color: $bg-secondary;
+        border-radius: 20px;
+        box-shadow: 0px 2px 40px 0 rgb(6 9 27 / 62%);
+        
+        & .input-box {
+            gap: 14px;
+            margin-bottom: 26px;
+        }
+        & .form-title {
+            line-height: 126%;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        & .form-description {
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 126%;
+            margin-bottom: 22px;
+        }
+        & textarea {
+            padding: 18px 20px 4px;
+        }
+    }
+}

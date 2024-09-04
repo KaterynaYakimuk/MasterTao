@@ -3,4 +3,11 @@
         max-width: 40.029vw;
     }
     
+    .swiper-template {
+        margin: -15px auto 0;
+        max-width: 960px;
+    }
+    .swiper-template .swiper-template-nav {
+        left: 0px;
+    }
 }
